@@ -1,26 +1,26 @@
 <?php
 
-    Class Car{
+    class Cars{
 
-        function  gretting(){
-        echo "Hello Student";
+        var $wheel_count = 4;
+
+        function gretting()
+        {
+            echo "Hello";
         }
+    }
 
-        function gretting2(){
+    $bmw = new Cars();
 
-        }
+    class Trucks extends Cars{
 
     }
 
-    $the_method = get_class_methods('Car');
-    foreach ($the_method as $method){
-        echo $method."<br>";
-    }
+    $tacoma = new Trucks();
+    echo $tacoma->wheel_count;
 
-//    $my_class = get_declared_classes();
-//
-//    foreach ($my_class as $class){
-//        echo $class."<br>";
-//    }
+
+
+
 
 ?>
